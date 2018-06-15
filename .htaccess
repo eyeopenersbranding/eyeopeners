@@ -1,0 +1,14 @@
+<IfModule mod_expires.c>
+    RewriteCond %{HTTP_HOST} ^www\.eyeopenersbranding\.nl$
+    RewriteRule ^/?$ "https\:\/\/eyeopenersbranding\.nl\/" [R=301,L]
+    
+    ExpiresActive on
+ 
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType text/css "access 1 month"
+    ExpiresByType text/html "access 1 month"
+    ExpiresByType text/php "access 1 month"
+</IfModule>
